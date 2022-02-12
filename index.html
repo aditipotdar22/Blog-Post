@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  background: gray;
+  background-image: url('back1.jpg');
+  background-repeat: no-repeat;
+  background-size: 1500px 500px;  
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="text-muted" href="#">Subscribe</a>
+      </div>
+      <div class="col-4 text-align:center ">
+        <a class="blog-header-logo text-dark" href="#">Large</a>
+      </div>
+      <div class="text-align: right">
+        <a class="text-muted" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="#">World</a>
+      <a class="p-2 text-muted" href="#">U.S.</a>
+      <a class="p-2 text-muted" href="#">Technology</a>
+      <a class="p-2 text-muted" href="#">Design</a>
+      <a class="p-2 text-muted" href="#">Culture</a>
+      <a class="p-2 text-muted" href="#">Business</a>
+      <a class="p-2 text-muted" href="#">Politics</a>
+      <a class="p-2 text-muted" href="#">Opinion</a>
+      <a class="p-2 text-muted" href="#">Science</a>
+      <a class="p-2 text-muted" href="#">Health</a>
+      <a class="p-2 text-muted" href="#">Style</a>
+      <a class="p-2 text-muted" href="#">Travel</a>
+    </nav>
+  </div>
+  
+
+<div class="header">
+  <h1 class="display-4 font-italic">Bake It Up !</h1>
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <p class="lead my-3">Come for the bakery. Stay for the pastry.</p>
+      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+	</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>The Vanilla Bean Blog</h2>
+      <h5>Smooth White, Feb 12, 2022</h5>
+      <div class="fakeimg1" style="height:200px;">
+	  <img src="vanilla.jpg" width="332" height="163">
+	  <img src="vanilla2.jpg" width="332" height="163">
+	  <img src="vanilla1.jpg" width="332" height="163">
+	  
+	  </div>
+      <p>The hugely successful Vanilla Bean Blog was started by self-taught Minneapolis baker Sarah Kieffer, as an attempt to provide a ‘food history’ for her family. This project aimed to become a collection of recipes the family could look back on in years to come, recipes imbued with special memories of time together. Her contemplative, beautifully written posts soon attracted enthusiasm from bakers worldwide, winning her a prestigious Saveur Magazine award. Her first cookbook will be published in autumn 2016. Alongside the scrumptious recipes, a standout feature of the blog is its stylish, minimalist photography.</p>
+    </div>
+    <div class="card">
+      <h2>Comme Un Lait Fraise</h2>
+      <h5>Pink Whisk, Jan 04, 2022</h5>
+      <div class="fakeimg1" style="height:200px;">
+	     <img src="strawberry.jpg" width="332" height="163">
+		  <img src="strawberry2.jpg" width="332" height="163">
+		 <img src="strawberry1.jpg" width="332" height="163">
+	  </div>
+	  <br>
+      <p>Comme Un Lait Fraise(also known by its English translation, Like A Strawberry Milk), is the work of a London-based French pastry chef named Fanny Zanotti. For anyone who dreams of a career in baking, it is inspiring reading, as she shares tips and recipes informed by her work at ‘the most talked-about restaurant of London’ (Chiltern Firehouse), alongside some more personal stories. With her whimsical illustrations and charmingly Frenchified English text, Zanotti has made this a delight for patisserie fans. She has also published a book, Paris Pastry Chef.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg1" style="height:100px;">
+	  <img src="about.jpg" width="275" height="80">
+	  </div>
+      <p>Bake it up is a thriving community of individuals who care deeply about baking and want to become experts at the art of baking. The community of home bakers, professional bakers, expert chefs and restaurateurs come together to create an environment of sharing and learning. With new baking recipes, innovative techniques and exquisite skills being shared, everyone can dream of becoming an expert baker!</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg1">
+	  <img src="pop1.jpg" width="300" height="75">
+	  </div><br>
+      <div class="fakeimg1">
+	  <img src="pop2.jpg" width="300" height="75">
+	  </div><br>
+      <div class="fakeimg1">Image
+	  <img src="pop3.jpg" width="300" height="75">
+	  </div>
+    </div>
+    <div class="card">
+      <h3>Contact Us</h3>
+	  <p> Fill up the form and let us know your thoughts</p>
+      <a href="file:///C:/Users/aditya/Desktop/form.html">Enquiry Form</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Follow Us On</h2>
+  <img src="facebook.jpg" width="50" height="50">
+  <img src="instagram.jpg" width="50" height="50">
+  <img src="twitter.jpg" width="50" height="50">
+  
+</div>
+
+</body>
+</html>
